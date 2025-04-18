@@ -88,3 +88,12 @@ if data_file is not None:
         st.warning("The dataset does not contain a 'Price' column for modeling.")
 else:
     st.info("Please upload a CSV file to begin.")
+brand = st.number_input("Brand")
+model = st.number_input("Model")
+fuel_type = st.number_input("Fuel_Type")
+
+brand = st.selectbox("Select Brand", ["Toyota", "Honda", "BMW", "Audi", "Ford", ...])
+model = st.text_input("Enter Model Name")
+year = st.number_input("Year", min_value=1990, max_value=2025, step=1)
+engine_size = st.number_input("Engine Size (L)", min_value=0.5, max_value=10.0, step=0.1)
+fuel_type = st.selectbox("Fuel Type", ["Petrol", "Diesel", "Electric", "Hybrid"])
